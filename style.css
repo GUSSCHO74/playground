@@ -3,18 +3,19 @@ html{
     margin: 0;
     padding: 0;
     font-family:"Montserrat";
-    zoom: 37%;
     scroll-behavior: smooth;
+}
+body {
     background-image: url(https://wallpaperaccess.com/full/4194309.jpg);
     background-repeat:repeat;
     background-size: cover;
 }
 #pfp{
-    width: 150px;
-    height: 150px;
+    width: 37.5px;
+    height: 37.5px;
     border-radius: 100%;
     margin-left: 100px;
-    border: 5px solid yellow;
+    border: 2px solid yellow;
 }
 .title {
     text-align: left;
@@ -28,32 +29,31 @@ html{
 header{
     color: white;
     font-weight: bold;
-    font-size: 80px;
-    margin-top: 20px;
+    font-size: 20px;
+    margin-top: 5px;
     position:relative;
     display: flex;
     align-items: center;
 }
 hr{
     position: relative;
-    top: 10px;
+    top: 2.5px;
     border: none;
-    height: 7px;
+    height: 1.75px;
     background: black;
-    margin-bottom: 1%;
 }
 .info{
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 6px;
     margin-left: 1%;
-    width: 700px;
+    width: 175px;
     position:absolute;
 }
 .top-panel,.mid-panel,.bottom-panel{
     background: rgb(54, 54, 54);
     position:relative; 
-    border: 11px solid rgb(226, 226, 226);
+    border: 4px solid rgb(226, 226, 226);
     width: 40%;
     text-align: center;
     left: 30%;
@@ -61,9 +61,9 @@ hr{
 }
 h1,h2,h3 {
     color: white;
-    font-size: 55px;
-    -webkit-text-stroke: 2px white;
-    border-bottom: 5px solid red;
+    font-size: 13.75px;
+    -webkit-text-stroke: white;
+    border-bottom: 2px solid red;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -71,7 +71,7 @@ h1,h2,h3 {
 }
 .paragraph1,.paragraph2,.paragraph3 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 7.5px;
     text-decoration: none;
     color: white;
     width: 80%;
@@ -89,37 +89,42 @@ h1,h2,h3 {
 }
 .contactbox{
     position:absolute; 
-    top: 35px;
+    top: 16px;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 10px;
     right: 100px;
 }
-.contactbox a{
+.contactbox a {
     color: rgba(255, 255, 255, .9);
     border-left: 10% solid transparent;
     transition-duration: 0.1s;
-    border-radius: 9px;
+    border-radius: 4px;
     border-color: transparent;
     text-decoration: none;
 }
 .contactbox li{
     display: inline;
     text-align: center;
-    margin-right: 55px;
+    margin-right: 13.75px;
     list-style: none;
 }
 a:hover {
     color:rgb(255, 0, 64); 
     cursor:pointer;  
-    border-left: 4px solid white;
-    padding-left: 11px;
+    border-left: 2px solid white;
+    padding-left: 8px;
     border-color: white;
-    border-right: 4px solid white;
-    padding-right: 11px;
+    border-right: 2px solid white;
+    padding-right: 8px;
 }
 h4{
-    font-size: 35px;
+    font-size: 8.75px;
     color: white;
-    margin-top: 11%;
+    margin-top: 2.75%;
     text-align: center;
+}
+.fab {
+    font-size: 10px;
+    color: white;
+    padding-right: 3px;
 }
