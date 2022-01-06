@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Playground</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/4b39a549d2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
-  </head>
-  <body>
-    <header>
-      <div id="logo" class="fas fa-heartbeat"></div>
-      <div class="title">
-        WWW.BOMBCLASSIX.COM
-        <div class="sub">A Fitness Newspaper</div>
-      </div>
-      <div class="contactbox">
-        <ul>
-          <li>
-            <i class="fab fa-instagram"></i
-            ><a href="https://www.instagram.com/johangussch/" target="_blank"
-              >INSTAGRAM</a
-            >
-          </li>
-          <li>
-            <i class="fab fa-youtube"></i
-            ><a
-              href="https://www.youtube.com/channel/UCbfbYLwa5U0YknUSesx9ozw"
-              target="_blank"
-              >YOUTUBE</a
-            >
-          </li>
-          <li>
-            <i class="fab fa-twitter"></i
-            ><a href="https://twitter.com/gusscho" target="_blank">TWITTER</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <hr />
-    <div class="top-panel">
-      <h1>header1</h1>
-      <div class="paragraph1">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-          eveniet quas esse fugiat reiciendis in sit soluta est, porro delectus
-          harum. Consectetur blanditiis facilis distinctio qui ab accusantium
-          dignissimos omnis?
-        </p>
-      </div>
-      <img class="hero-1"
-      src=https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg?w=824&quality=70>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playground</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/4b39a549d2.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <div id="logo" class="fas fa-heartbeat"></div>
+    <div class="title">
+      WWW.BOMBCLASSIX.COM
+      <div class="sub">A Fitness Newspaper</div>
     </div>
-    <!-- <div class="mid-panel">
+    <div class="contactbox">
+      <ul>
+        <li>
+          <i class="fab fa-instagram"></i><a href="https://www.instagram.com/johangussch/" target="_blank">INSTAGRAM</a>
+        </li>
+        <li>
+          <i class="fab fa-youtube"></i><a href="https://www.youtube.com/channel/UCbfbYLwa5U0YknUSesx9ozw"
+            target="_blank">YOUTUBE</a>
+        </li>
+        <li>
+          <i class="fab fa-twitter"></i><a href="https://twitter.com/gusscho" target="_blank">TWITTER</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <hr />
+  <div class="top-panel">
+    <h1>header1</h1>
+    <div class="paragraph1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+        eveniet quas esse fugiat reiciendis in sit soluta est, porro delectus
+        harum. Consectetur blanditiis facilis distinctio qui ab accusantium
+        dignissimos omnis?
+      </p>
+    </div>
+    <img class="hero-1" src=https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg?w=824&quality=70>
+  </div>
+  <!-- <div class="mid-panel">
       <h2>header2</h2>
       <div class="paragraph2">
         <p>
@@ -85,31 +75,28 @@
           I'll try to provide and vice versa.
         </p>
       </div> -->
-    <div class="help">
-      <button class="open-button" onclick="openForm()">
-        Feel free to ask anything!
-      </button>
-      <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-          <label for="chat">Chat</label>
-          <input
-            type="chat"
-            placeholder="Type your question here"
-            name="message"
-          />
-          <button type="button" class="btn cancel" onclick="closeForm()">
-            Close
-          </button>
-        </form>
-      </div>
-      <script>
-        function openForm() {
-          document.getElementById("myForm").style.display = "block";
-        }
-        function closeForm() {
-          document.getElementById("myForm").style.display = "none";
-        }
-      </script>
+  <div class="help">
+    <button class="open-button" onclick="openForm()">
+      Feel free to ask anything!
+    </button>
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <label for="chat">Chat</label>
+        <input type="chat" placeholder="Type your question here" name="message" />
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
     </div>
-  </body>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+  </div>
+</body>
+
 </html>
