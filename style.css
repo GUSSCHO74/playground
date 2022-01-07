@@ -10,7 +10,7 @@ body {
   margin: 0;
 }
 #logo {
-  margin-left: 100px;
+  margin-left: 5%;
   font-size: 30px;
   color: lime;
 }
@@ -21,7 +21,6 @@ header {
   color: white;
   font-weight: bold;
   font-size: 20px;
-  position: relative;
   display: flex;
   align-items: center;
   background-color: rgb(29, 29, 29);
@@ -34,8 +33,64 @@ header {
   color: white;
   font-weight: bold;
   font-size: 9px;
-  width: 175px;
-  margin-left: 3px;
+  text-align: center;
+}
+.subscription,
+.login {
+  font-size: 11px;
+  background-color: red;
+  border-radius: 2px;
+  padding: 2px;
+  margin-left: 64%;
+}
+.login {
+  margin-left: 1%;
+}
+.fab::before {
+  font-size: 14px;
+}
+.fab {
+  padding-right: 5px;
+}
+i.fab.fa-instagram:before {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+i.fab.fa-youtube:before {
+  color: red;
+}
+i.fab.fa-twitter:before {
+  color: lightskyblue;
+}
+.contactbox {
+  font-size: 14px;
+  right: 0;
+}
+.contactbox a {
+  color: rgba(255, 255, 255, 0.9);
+  border-left: 10% solid transparent;
+  transition-duration: 0.1s;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.contactbox li {
+  display: inline;
+  text-align: center;
+  margin-right: 21px;
+  list-style: none;
+}
+a:hover {
+  color: white;
+  cursor: pointer;
+  border-color: white;
+  border-bottom: 1.5px solid red;
+  padding-bottom: 2px;
 }
 hr {
   width: 90%;
@@ -78,52 +133,6 @@ h3 {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-.fab::before {
-  font-size: 14px;
-}
-.fab {
-  padding-right: 5px;
-}
-i.fab.fa-instagram:before {
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-}
-i.fab.fa-youtube:before {
-  color: red;
-}
-i.fab.fa-twitter:before {
-  color: lightskyblue;
-}
-.contactbox {
-  font-size: 14px;
-  margin-left: 54%;
-}
-.contactbox a {
-  color: rgba(255, 255, 255, 0.9);
-  border-left: 10% solid transparent;
-  transition-duration: 0.1s;
-  border-radius: 3px;
-  text-decoration: none;
-}
-.contactbox li {
-  display: inline;
-  text-align: center;
-  margin-right: 21px;
-  list-style: none;
-}
-a:hover {
-  color: white;
-  cursor: pointer;
-  border-color: white;
-  border-bottom: 1.5px solid red;
-  padding-bottom: 2px;
 }
 footer {
   background-color: white;
