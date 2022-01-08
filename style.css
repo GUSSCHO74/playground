@@ -46,6 +46,7 @@ header {
 .login {
   margin-left: 1%;
 }
+/*
 .fab::before {
   font-size: 14px;
 }
@@ -92,36 +93,36 @@ a:hover {
   border-bottom: 1.5px solid red;
   padding-bottom: 2px;
 }
+*/
 hr {
   width: 90%;
 }
-.hero-1 {
-  max-width: 80%;
-  margin-bottom: 10px;
-  border: 1px black;
-  border-radius: 4%;
+.date-1,
+.date-2 {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
-.top-panel,
-.mid-panel,
-.bottom-panel {
-  background: rgb(54, 54, 54);
+.first-panel,
+.second-panel,
+.third-panel {
+  background: rgb(80, 80, 80);
   position: relative;
   border: 2px solid rgb(226, 226, 226);
-  width: 33%;
+  width: 40%;
   text-align: center;
-  left: 5%;
+  left: 11%;
   border-radius: 5%;
+  margin-top: 1%;
 }
 h1,
 h2,
 h3 {
   color: white;
   font-size: 21px;
-  -webkit-text-stroke: white;
   border-bottom: 2px solid lime;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 21%;
+  margin-left: 3%;
   border-radius: 21%;
 }
 .paragraph1,
@@ -130,9 +131,14 @@ h3 {
   font-weight: bold;
   font-size: 14px;
   color: white;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 60%;
+  margin-left: 3%;
+}
+.hero-1,
+.hero-2,
+.hero-3 {
+  max-width: 20%;
+  border-radius: 4%;
 }
 footer {
   background-color: white;
@@ -169,7 +175,7 @@ footer {
 .form-container {
   max-width: 300px;
   padding: 10px;
-  background-color: white;
+  background-color: rgb(194, 194, 194);
 }
 .form-container input[type="text"],
 .form-container input[type="chat"] {
