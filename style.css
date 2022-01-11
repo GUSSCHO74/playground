@@ -1,185 +1,177 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
 html {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
+  font-family: "Electrolize", sans-serif;
   scroll-behavior: smooth;
 }
 body {
-  background-color: rgb(0, 0, 14);
+  background-color: rgb(54, 0, 0);
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 #logo {
-  margin-left: 5%;
+  margin-left: 10%;
   font-size: 30px;
-  color: green;
+  color: red;
+  text-shadow: 0 0 4px #000;
 }
 .title {
   margin-left: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 header {
   color: white;
-  font-weight: bold;
-  font-size: 20px;
   display: flex;
   align-items: center;
-  background-color: rgb(29, 29, 29);
-  padding-top: 7px;
-  padding-bottom: 7px;
-  margin-bottom: 2%;
-  width: 100%;
+  background-color: rgb(0, 0, 14);
+  margin-bottom: 1.5%;
 }
 .sub {
   color: white;
   font-weight: bold;
   font-size: 9px;
-  text-align: center;
+  margin-left: 5px;
 }
-.subscription,
-.login {
-  font-size: 11px;
-  background-color: red;
-  margin-left: 62%;
+nav {
+  width: 100%;
+  margin-right: 10%;
+}
+#nav-list {
   font-weight: bold;
-  color: white;
-  padding-left: 11px;
-  padding-right: 11px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  border: none;
-  box-shadow: 0px 0px 11px black;
+  display: flex;
 }
-.login {
-  margin-left: 1%;
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
 }
-/*
-.fab::before {
-  font-size: 14px;
+.nav-bar li {
+  background-color: orangered;
+  padding: 5px 11px;
+  border-radius: 4px;
+  margin: 5px;
+  border: 2px black;
 }
-.fab {
-  padding-right: 5px;
-}
-i.fab.fa-instagram:before {
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-}
-i.fab.fa-youtube:before {
-  color: red;
-}
-i.fab.fa-twitter:before {
-  color: lightskyblue;
-}
-.contactbox {
-  font-size: 14px;
-  right: 0;
-}
-.contactbox a {
-  color: rgba(255, 255, 255, 0.9);
-  border-left: 10% solid transparent;
-  transition-duration: 0.1s;
-  border-radius: 3px;
-  text-decoration: none;
-}
-.contactbox li {
-  display: inline;
-  text-align: center;
-  margin-right: 21px;
-  list-style: none;
-}
-a:hover {
-  color: white;
+li {
+  margin: 15px 5px;
+  text-transform: uppercase;
+  font-size: 12px;
   cursor: pointer;
-  border-color: white;
-  border-bottom: 1.5px solid red;
-  padding-bottom: 2px;
 }
-*/
-hr {
-  width: 90%;
-}
-.date-1,
-.date-2,
-.date-3,
-.date-4,
-.date-5 {
+a {
+  text-decoration: none;
   color: white;
   font-size: 11px;
+  cursor: pointer;
+}
+.topic {
   font-weight: bold;
-  position: absolute;
+  font-size: 24px;
+  color: white;
+  margin-left: 10%;
+  text-shadow: 0px 0px 7px white;
+}
+hr {
+  width: 80%;
+}
+#search {
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+  cursor: pointer;
 }
 .first-panel,
 .second-panel,
 .third-panel,
 .fourth-panel,
-.fifth-panel {
-  position: relative;
-  width: 40%;
-  left: 5%;
+.fifth-panel,
+.sixth-panel,
+.seventh-panel,
+.eighth-panel {
+  margin-left: 10%;
   margin-top: 14px;
+  max-width: 54%;
+}
+.date-1,
+.date-2,
+.date-3,
+.date-4,
+.date-5,
+.date-6,
+.date-7,
+.date-8 {
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
 }
 .first-panel-text,
 .second-panel-text,
 .third-panel-text,
 .fourth-panel-text,
-.fifth-panel-text {
-  background: rgb(80, 80, 80);
+.fifth-panel-text,
+.sixth-panel-text,
+.seventh-panel-text,
+.eighth-panel-text {
+  background: rgb(77, 77, 77);
   border-radius: 1%;
   border: 2px solid rgb(226, 226, 226);
   text-align: center;
   margin-left: 12%;
-  width: 70%;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1 {
   color: white;
   font-size: 21px;
-  width: 200px;
-  margin-left: 3%;
   border-radius: 21%;
-  margin-top: 0;
+  margin-top: 11px;
   margin-bottom: 0;
+  display: flex;
+  margin-left: 5%;
 }
 .paragraph1,
 .paragraph2,
 .paragraph3,
 .paragraph4,
-.paragraph5 {
+.paragraph5,
+.paragraph6,
+.paragraph7,
+.paragraph8 {
   font-weight: bold;
   font-size: 11px;
   color: white;
-  width: 60%;
+  width: 74%;
   margin-left: 3%;
 }
 .hero-1,
 .hero-2,
 .hero-3,
 .hero-4,
-.hero-5 {
+.hero-5,
+.hero-6,
+.hero-7,
+.hero-8 {
   width: 17%;
   border-radius: 4%;
-  position: absolute;
-  top: 9%;
-  right: 160px;
+  display: flex;
+  justify-content: flex-end;
 }
 .open-button {
-  background-color: #555;
-  box-shadow: 0px 0px 11px white;
-  color: white;
+  background-color: rgb(172, 160, 0);
+  box-shadow: 0px 0px 21px black;
+  color: black;
+  font-weight: bold;
   padding: 11px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
   position: fixed;
-  bottom: 23px;
-  right: 28px;
+  bottom: 2%;
+  right: 1%;
   width: 11%;
   font-size: 11px;
 }
@@ -206,77 +198,14 @@ h5 {
 }
 .form-container .btn {
   color: white;
-  padding: 16px 20px;
+  padding: 10px;
   border: none;
   cursor: pointer;
   width: 100%;
   margin-bottom: 10px;
-  opacity: 0.8;
 }
 .btn {
   background-color: red;
   font-weight: bold;
-}
-@media screen and (max-width: 420px) {
-  body {
-    width: 30%;
-  }
-  header {
-    width: 768px;
-  }
-  #logo {
-    margin-left: 2%;
-    font-size: 100%;
-  }
-  .title {
-    font-size: 11px;
-    margin-left: 10px;
-  }
-  .sub {
-    font-size: 7px;
-  }
-  .subscription, .login {
-    font-size: 7px;
-    margin-left: 5%;
-  }
-  .login {
-    margin-left: 1%;
-  }
-  hr {
-    width: 350px;
-    margin-left: 22%;
-  }
-  .first-panel-text,
-  .second-panel-text,
-  .third-panel-text,
-  .fourth-panel-text,
-  .fifth-panel-text {
-    margin-left: 50px;
-    padding-right: 200px;
-  } 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-size: 11px;  
-    margin-left: 21px;
-  }
-  .paragraph1,
-  .paragraph2,
-  .paragraph3,
-  .paragraph4,
-  .paragraph5 {
-    font-size: 7px;
-  }
-  .date-1,
-  .date-2,
-  .date-3,
-  .date-4,
-  .date-5 {
-   font-size: 7px; 
-  }
-  .support {
-    font-size: 30px;
-  }
+  border-radius: 5px;
 }
