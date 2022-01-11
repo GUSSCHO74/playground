@@ -83,8 +83,8 @@ hr {
   display: flex;
   justify-content: flex-end;
   margin-right: 10%;
-  cursor: pointer;
 }
+
 .first-panel,
 .second-panel,
 .third-panel,
