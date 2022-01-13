@@ -178,9 +178,6 @@ hr {
   .paragraph5 {
     margin-left: 13%;
   }
-  img {
-    padding-left: 50px;
-  }
   .title {
     margin-left: 12%;
   }
@@ -204,6 +201,8 @@ h1 {
   color: white;
   width: 74%;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 img {
   width: 150px;
