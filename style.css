@@ -3,6 +3,10 @@ html {
   font-family: "Electrolize", sans-serif;
   scroll-behavior: smooth;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   background-color: rgb(54, 0, 0);
   margin: 0;
@@ -32,35 +36,47 @@ header {
   color: white;
   font-weight: bold;
   font-size: 9px;
-  margin-left: 5px;
+  text-align: center;
 }
 nav {
   width: 100%;
   height: 74px;
   margin-right: 10%;
 }
-
-
 #mobile-menu-icon {
-  margin-left: 100%; /* gör att hamburgerikonen ligger så långt till höger som möjligt*/
   display: none;
 }
-
 @media screen and (max-width: 768px) {
   #mobile-menu-icon {
-    display: block; /* visar hamburger-ikonen */
+    display: block;
+  }
+  nav {
+    height: 50px;
   }
   nav li {
-    display: none; /* döljer listan med de "vanliga" meny-länkarna */
+    display: none;
   }
+  .title {
+    font-size: 13px;
+  }
+  .sub {
+    font-size: 8px;
+  }
+  header {
+    height: 45px;
+    margin-bottom: 3%;
+  }
+}
+#mobile-menu-icon.fas.fa-bars::before {
+  cursor: pointer;
 }
 .links {
   display: flex;
+  list-style-type: none;
 }
-ul{
+ul {
   display: flex;
   justify-content: flex-end;
-  list-style-type: none;
 }
 li {
   background-color: orangered;
@@ -85,6 +101,16 @@ a {
   color: white;
   margin-left: 10%;
   text-shadow: 0px 0px 7px white;
+  animation: fadeInRight 1.5s;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(80%);
+  }
+  to {
+    opacity: 1;
+  }
 }
 hr {
   width: 80%;
@@ -96,81 +122,96 @@ hr {
   justify-content: flex-end;
   margin-right: 10%;
 }
-
 .first-panel,
 .second-panel,
 .third-panel,
 .fourth-panel,
-.fifth-panel,
-.sixth-panel,
-.seventh-panel,
-.eighth-panel {
+.fifth-panel {
   margin-left: 10%;
   margin-top: 14px;
-  max-width: 54%;
+  max-width: 74%;
+  display: flex;
 }
 .date-1,
 .date-2,
 .date-3,
 .date-4,
-.date-5,
-.date-6,
-.date-7,
-.date-8 {
+.date-5 {
   color: white;
   font-size: 11px;
   font-weight: bold;
-  position: absolute;
+  width: 100px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 1310px) {
+  .date-1 p,
+  .date-2 p,
+  .date-3 p,
+  .date-4 p,
+  .date-5 p {
+    width: 61px;
+  }
 }
 .first-panel-text,
 .second-panel-text,
 .third-panel-text,
 .fourth-panel-text,
-.fifth-panel-text,
-.sixth-panel-text,
-.seventh-panel-text,
-.eighth-panel-text {
+.fifth-panel-text {
   background: rgb(77, 77, 77);
   border-radius: 1%;
   border: 2px solid rgb(226, 226, 226);
-  text-align: center;
-  margin-left: 12%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 440px) {
+  .first-panel-text,
+  .second-panel-text,
+  .third-panel-text,
+  .fourth-panel-text,
+  .fifth-panel-text {
+    flex-direction: column;
+  }
+  .paragraph1,
+  .paragraph2,
+  .paragraph3,
+  .paragraph4,
+  .paragraph5 {
+    margin-left: 13%;
+  }
+  img {
+    padding-left: 50px;
+  }
+  .title {
+    margin-left: 12%;
+  }
+  #home {
+    padding-left: 8%;
+  }
 }
 h1 {
   color: white;
   font-size: 21px;
-  border-radius: 21%;
   margin-top: 11px;
-  margin-bottom: 0;
-  display: flex;
-  margin-left: 5%;
+  text-align: center;
 }
 .paragraph1,
 .paragraph2,
 .paragraph3,
 .paragraph4,
-.paragraph5,
-.paragraph6,
-.paragraph7,
-.paragraph8 {
+.paragraph5 {
   font-weight: bold;
   font-size: 11px;
   color: white;
   width: 74%;
-  margin-left: 3%;
+  text-align: center;
 }
-.hero-1,
-.hero-2,
-.hero-3,
-.hero-4,
-.hero-5,
-.hero-6,
-.hero-7,
-.hero-8 {
+img {
   width: 150px;
   border-radius: 4%;
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .open-button {
   background-color: rgb(200, 187, 0);
@@ -183,15 +224,15 @@ h1 {
   cursor: pointer;
   position: fixed;
   bottom: 2%;
-  right: 1%;
-  max-width: 200px;
+  right: 2%;
+  max-width: 100px;
   font-size: 11px;
 }
 .form-popup {
   display: none;
   position: fixed;
   bottom: 0;
-  right: 15px;
+  right: 0;
   font-weight: bold;
 }
 .form-container {
@@ -202,21 +243,20 @@ h1 {
 .form-container input[type="text"],
 .form-container input[type="chat"] {
   width: 90%;
-  padding-left: 15px;
+  padding-left: 11px;
   padding-top: 15px;
   padding-bottom: 100px;
   margin: 5px;
   background: #f1f1f1;
 }
 .form-container .btn {
-  color: black;
   padding: 10px;
   border: none;
   cursor: pointer;
   width: 100%;
   margin-bottom: 10px;
 }
-.btn .cancel {
+.btn.cancel {
   color: white;
 }
 .btn {
@@ -224,8 +264,6 @@ h1 {
   font-weight: bold;
   border-radius: 5px;
 }
-
-
 .breakpoint {
   width: 100%;
   height: 1px;
@@ -235,20 +273,12 @@ h1 {
 footer {
   background-color: rgb(0, 0, 14);
   bottom: 0;
-  height: 250px;
+  height: 200px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contactbox li{
-  margin-right: 300px;
-  list-style: none;
-  display: flex; 
-  flex-direction: row; 
-  justify-content: space-around;
-}
-
 #home {
   display: flex;
   justify-content: flex-end;
@@ -259,18 +289,20 @@ footer {
   font-weight: bold;
   align-items: center;
 }
-@media screen and (max-width: 440px) {
-  #home {
-    flex-direction:column;
-    position: absolute;
-    justify-content: center;
-    margin-top: 1000px;
-  }
-}
-  
 #signup-container {
   margin-top: 10%;
   margin-bottom: 1%;
+  animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 .signup-header {
   color: white;
@@ -315,6 +347,7 @@ button {
   background-color: rgb(29, 29, 29);
   border-radius: 4px;
   box-shadow: 0px 0px 8px black;
+  margin-bottom: 150px;
 }
 p {
   color: white;
