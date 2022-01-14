@@ -43,11 +43,11 @@ nav {
   height: 74px;
   margin-right: 10%;
 }
-#mobile-menu-icon {
+#burger {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  #mobile-menu-icon {
+  #burger {
     display: block;
   }
   nav {
@@ -67,8 +67,13 @@ nav {
     margin-bottom: 3%;
   }
 }
-#mobile-menu-icon.fas.fa-bars::before {
+#burger.fas.fa-bars::before {
   cursor: pointer;
+}
+@media screen and (max-width:350px){
+  ul {
+    padding-right: 40px;
+  }  
 }
 .links {
   display: flex;
