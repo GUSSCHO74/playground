@@ -293,6 +293,10 @@ footer {
   font-weight: bold;
   align-items: center;
 }
+#home a:hover{
+  border-bottom: 2px solid red;
+  padding-bottom: 2px;
+}
 #signup-container {
   margin-top: 10%;
   margin-bottom: 1%;
